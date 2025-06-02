@@ -1,0 +1,29 @@
+[
+  {
+    "surveyId": "ac89d0f8-a9b1-48a2-9b84-cacae0f3a5d4",
+    "userId": "3275519905@qq.com",
+    "answers": [
+      "这是问卷的答案数组",
+      "答案的数据结构可以由你们自己定义"
+    ],
+    "submitTime": "2025-05-18T10:25:56.587Z"
+  },
+  {
+    "surveyId": "0a42c0f2-4870-484e-8f43-0cdeb5beade5",
+    "userId": "3275519905@qq.com",
+    "answers": [
+      "这是问卷的答案数组",
+      "答案的数据结构可以由你们自己定义"
+    ],
+    "submitTime": "2025-05-18T10:26:59.186Z"
+  },
+  {
+    "surveyId": "0a42c0f2-4870-484e-8f43-0cdeb5beade5",
+    "userId": "2275519905@qq.com",
+    "answers": [
+      "这是cxy2",
+      "答案的数据结构可以由你们自己定义"
+    ],
+    "submitTime": "2025-05-18T10:28:24.553Z"
+  }
+]
