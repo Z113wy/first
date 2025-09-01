@@ -1,16 +1,17 @@
 const { v4: uuidv4 } = require('uuid');
 
- AnswerItem={
-  surveyId:String,
-  userTd:string,
-  value:string|number|boolean|string
- }
-AnswerData={
-  surveyId:String,
-  userId:String,
-  responses:Answer,
-  submittedAt:string
-}
+const AnswerItem = {
+  surveyId: String,
+  userId: String,
+  value: String | Number | Boolean
+};
+
+const AnswerData = {
+  surveyId: String,
+  userId: String,
+  responses: AnswerItem,
+  submittedAt: String
+};
 
 class Answer {
   constructor({

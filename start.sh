@@ -1,0 +1,1 @@
+#!/bin/bash\necho "启动问卷系统..."\necho "1. 安装后端依赖..."\nnpm install\necho "2. 启动后端服务..."\nnpm start &\necho "3. 等待后端启动..."\nsleep 3\necho "4. 安装前端依赖..."\ncd frontend\nnpm install\necho "5. 启动前端服务..."\nnpm run dev &\necho "系统启动完成！"\necho "后端: http://localhost:3000"\necho "前端: http://localhost:5173"\necho "测试用户: test1@example.com / 123456"
