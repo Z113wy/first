@@ -1,14 +1,1 @@
-[
-  {
-    "email": "3275519905@qq.com",
-    "password": "147258369Cxy",
-    "username": "陈熙阳",
-    "id": "3275519905@qq.com"
-  },
-  {
-    "email": "2275519905@qq.com",
-    "password": "147258369Cxy",
-    "username": "陈熙阳2",
-    "id": "2275519905@qq.com"
-  }
-]
+[{"email":"test1@example.com","username":"测试用户1","password":"123456","id":"test1@example.com"},{"email":"test2@example.com","username":"测试用户2","password":"123456","id":"test2@example.com"}]

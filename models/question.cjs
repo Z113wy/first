@@ -1,24 +1,25 @@
 const { v4: uuidv4 } = require('uuid');
 
-questionTypes={
-  SINGLE:'single',
-  MULTIPLE:'multiple',
-  TEXT:'text',
-  SLIDER:'slider',
-  RATING:'rating',
-  DROPDOWN:'dropdown',
-  LOCATION:'location'
-}
-questionData={
-  id:String,
+const questionTypes = {
+  SINGLE: 'single',
+  MULTIPLE: 'multiple',
+  TEXT: 'text',
+  SLIDER: 'slider',
+  RATING: 'rating',
+  DROPDOWN: 'dropdown',
+  LOCATION: 'location'
+};
+
+const questionData = {
+  id: String,
   type: questionTypes,
-  title:String,
-  required :Boolean,
-  options:string,
-  min:Number,
-  max:Number,
-  step:Number
-}
+  title: String,
+  required: Boolean,
+  options: string,
+  min: Number,
+  max: Number,
+  step: Number
+};
 
 class Question {
   constructor({ 

@@ -1,20 +1,21 @@
 const { v4: uuidv4 } = require('uuid');
 
-SurveyStatus={
-  DRAFT:'draft',
-  PUBLISHED:'published',
-  CLOSED:'closed'
-}
-SurveyData={
-  id:String,
-  title:String,
-  description:String,
-  creatorId:String,
-  questions:QuestionData,
-  status :SurveyStatus,
-  createdAt:Data|String,
-  publishedAt:Data|String
-}
+const SurveyStatus = {
+  DRAFT: 'draft',
+  PUBLISHED: 'published',
+  CLOSED: 'closed'
+};
+
+const SurveyData = {
+  id: String,
+  title: String,
+  description: String,
+  creatorId: String,
+  questions: QuestionData,
+  status: SurveyStatus,
+  createdAt: Date | String,
+  publishedAt: Date | String
+};
 class Survey {
   constructor({
     id = uuidv4(),

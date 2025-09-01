@@ -3,7 +3,19 @@ const { saveUser, getUserByEmail } = require('../utils/storage.cjs');
 const router = new Router();
 
 const authenticateUser = async (ctx, next) => {
-  // 认证逻辑实现
+  // 简单的认证逻辑实现
+  const { email } = ctx.request.body || ctx.params;
+  if (!email) {
+    ctx.throw(401, '需要用户认证');
+  }
+  
+  // 验证用户是否存在
+  const user = await getUserByEmail(email);
+  if (!user) {
+    ctx.throw(401, '用户不存在');
+  }
+  
+  ctx.state.user = user;
   await next();
 };
 
